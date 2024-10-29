@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-np
+spec:
+  type: NodePort
+  selector:
+    project: expense 
+    module: backend
+    environment: dev
+  ports:
+  - name: name-of-service-port
+    protocol: TCP
+    port: 80 #Service-Port
+    targetPort: annot-svc #Target Port
