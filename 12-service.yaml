@@ -11,4 +11,4 @@ spec:
   - name: name-of-service-port
     protocol: TCP
     port: 80 #Service-Port
-    targetPort: annotations-service #Target Port
+    targetPort: annot-svc #Target Port
